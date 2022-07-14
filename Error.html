@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#151018">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Error.css">    
+    <link rel="stylesheet" href="Js.js">
+    <title>Srh Web - Error</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav nav__header container grid">
+            <div class="nav__logo">
+                <h1 class="logo">Srh Gang</h1>
+            </div>
+            <div>
+                <ul class="nav__list grid" id="nav-list">
+                    <li class="nav__item">
+                        <a href="Index.html" class="nav__link link active-link" id="nav-link">
+                            <i class="uil uil-estate icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item  btn__warning">
+                        <a href="Index.html" class="nav__link link active-link">
+                            <i class="uil uil-images icon"></i> Posters
+                        </a>
+                    </li>
+
+                    <li class="nav__item  btn__warning">
+                        <a href="Index.html" class="nav__link link active-link">
+                            <i class="uil uil-favorite icon"></i> Note
+                        </a>
+                    </li>
+
+                    <i class="uil uil-minus icon menu__close menu-close" id="menu-close"></i>
+                </ul>
+
+                <i class="uil uil-ellipsis-v icon menu" id="menu"></i>
+            </div>
+        </nav>
+
+        <div class="warning">
+            <div class="warning__text">
+                <p>Indisponible</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="error__main container">
+        <div class="error__content">
+            <div class="error">
+                <h3>Le message n'a pas été envoyer</h2>
+                <i class="uil uil-sync-exclamation"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer__content container">
+            <div class="footer__elements">
+                <div>
+                    <h1 class="footer__logo logo">Srh Gang</h1>
+                    <span class="copyright">
+                        <p>Made with ❤️ by Srh Gang.&nbsp;</p>
+                        <p>J'agis seul et crée des<br>contenus variable sans coépration. </p>
+                    </span>
+                </div>
+
+                <div class="footer__texts">
+                    <div class="footer__text">
+                        <p>Pour tout renseignement, <br>
+                            veuillez me contactez grâce aux <br>
+                            différentes plateformes de <br>
+                            communications. <i class="uil uil-angle-double-down"></i>
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact__btn show click">
+                            <i class="uil uil-at icon btn__contact"></i>
+                            <i title="Contactez" class="uil uil-envelope icon item icon__contact"></i>
+                            <a href="https://bit.ly/3RjDbGD" class="item"><i class="uil uil-youtube icon "></i></a>
+                            <a href="https://bit.ly/3R1IB93" class="item"><i class="il uil-instagram icon"></i></a>
+                        </div>
+
+                        <div class="contact__grid">
+                            <div class="site">
+                                <div class="page">
+                                    <form action="https://postmail.invotes.com/send" id="form" method="post" class="form__contact">
+
+                                        <input type="hidden" name="access_token" value="3eiabx1wmsg94gtk48u34zp5"/>
+
+                                        <div class="form__contact-title">
+                                            <p>Contactez moi</p>
+
+                                            <div class="contact__close">
+                                                <i class="uil uil-minus icon"></i>
+                                            </div>
+                                        </div>
+
+                                        <input type="email" name="reply_to" id="_emai" size="0" placeholder="Email" required>
+                                        <input type="text" name="subject" placeholder="Objet" />
+
+                                        <input type="hidden" name="success_url" value="." onclick="alert('Messager envoyer !')"/>
+                                        <input type="hidden" name="error_url" value="Error.html"/>
+
+                                        <textarea name="text" id="message" cols="30" rows="10" rows="5" cols="30" minlength="50" maxlength="250" placeholder="Votre texte" required></textarea>
+                                            
+                                        <input type="submit" class="contact__submit" id="Btnsubmit" value="Envoyer"> 
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Js.js"></script>
+        
+    </body>
+</html>

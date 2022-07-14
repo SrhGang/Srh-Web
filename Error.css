@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background: var(--body-background);
+	color: var(--text-color);
+}
+
+:root {
+	--header-height: 3rem;
+
+	/*--========== color ==========*/
+
+	--first-color: #8d99ae;
+	--first-color-second: #949494;
+	--first-color-lighter: #ff5300;
+	--title-color: ;
+	--text-color: #fff;
+	--input-color: ;
+	--body-color: ;
+	--container-color: #adb5bd;
+	--light: #f8fafb;
+	--white: #fff;
+	--black: #000;
+	--dark: #2b3e4f;
+	--gray: #c3c8d0;
+	--light-gray: #ececef;
+	--danger: #f44336;
+	--primary: #06f;
+
+	/*--========== font & typography ==========*/
+
+	--body-background: #151018;
+	--body-color: #fff;
+
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: .938rem;
+	--small-font-size: .813rem;
+	--smaller-font-size: .75rem;
+
+	/*--========== font weight ==========*/
+
+	--font-medium: 700;
+	--font-semi-bold: 800;
+
+	/*--========== margenes bottom ==========*/
+
+	--mb-0-25: .25rem;
+	--mb-0-5: .5rem;
+	--mb-0-75: .75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*--========== Z-index ==========*/
+
+	--Z-tooltip: 10;
+	--Z-fixed: 100;
+	--Z-modal: 1000;
+
+	/*--========== hover overlay ==========*/
+
+	--img-hidden: hidden;
+	--img-scale: scale(1.1);
+}
+
+@media screen and (min-width: 968px) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: .875rem;
+		--smaller-font-size: .813rem;
+
+	}
+}
+.error__content{
+    margin: 25%;
+    border-radius: var(--mb-0-75);
+}
+
+.error__content{
+    height: max-content;
+    background-color: var(--first-color);
+}
+
+.error{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: var(--mb-1-5);
+}
+
+.error i{
+    font-size: var(--mb-3);
+}
